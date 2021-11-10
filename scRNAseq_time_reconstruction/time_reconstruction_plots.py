@@ -265,8 +265,8 @@ def plot_causality(adata,
             color = "C"+str(np.mod(j,10))
             s.append(mlines.Line2D([],[],color=color,label=i))
             
-        thirdLegend = plt.legend(bbox_to_anchor=(1,0.5), handles=s, loc="upper left",fontsize=20,title="",title_fontsize=20)
-        plt.gca().add_artist(thirdLegend)  
+    thirdLegend = plt.legend(bbox_to_anchor=(1,0.5), handles=s, loc="upper left",fontsize=20,title="",title_fontsize=20)
+    plt.gca().add_artist(thirdLegend)  
     
     if ax == None:
         return axis
